@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
+//info this is the smartviewholder
 public class SmartViewHolder extends RecyclerView.ViewHolder {
     TextView textTitle;
     TextView textLocation;
@@ -24,6 +24,7 @@ public class SmartViewHolder extends RecyclerView.ViewHolder {
     public SmartViewHolder(View itemView, final ExcellentAdventureListener listener) {
         super(itemView);
         this.listener = listener;
+        // info - make all the findviewbyid here
         textTitle = (TextView) itemView.findViewById(R.id.text_title);
         textLocation = (TextView) itemView.findViewById(R.id.text_location);
         textDate = (TextView) itemView.findViewById(R.id.text_date);
@@ -44,6 +45,7 @@ public class SmartViewHolder extends RecyclerView.ViewHolder {
         });
     }
 
+    // info - make the adapter a liiter smarter, by put the set item here
     public void setItem(Item item) {
         this.item = item;
         textTitle.setText(item.getTitle());
