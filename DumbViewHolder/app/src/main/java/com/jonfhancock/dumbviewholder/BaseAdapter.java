@@ -45,6 +45,7 @@ public abstract class BaseAdapter extends RecyclerView.Adapter {
         final List<Item> oldItems = new ArrayList<>(this.items);
 
         final Handler handler = new Handler();
+//        info calculate the diffutil in different thread
         new Thread(new Runnable() {
             @Override
             public void run() {
