@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jonfhancock.dumbviewholder">
 
+    <!--https://jonfhancock.com/your-viewholders-are-dumb-make-em-not-dumb-82e6f73f630c-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

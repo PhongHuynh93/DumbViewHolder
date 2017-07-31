@@ -16,6 +16,7 @@ public class SmartViewHolder extends RecyclerView.ViewHolder {
     Item item;
     ExcellentAdventureListener listener;
 
+    // info - We can improve things even more by having our ViewHolder define an Interface that the Activity or Fragment can implement, and the Adapter can pass to the ViewHolder.
     public interface ExcellentAdventureListener{
         void onMapClicked(Item item);
         void onTitleClicked(Item item);
@@ -31,6 +32,8 @@ public class SmartViewHolder extends RecyclerView.ViewHolder {
         mapIcon = (ImageView) itemView.findViewById(R.id.map_icon);
         textContainer = itemView.findViewById(R.id.text_container);
 
+//        info make the seton click on the viewholder too
+        // We can set the onClickListeners once in the constructor rather than over and over again at bind time.
         textContainer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

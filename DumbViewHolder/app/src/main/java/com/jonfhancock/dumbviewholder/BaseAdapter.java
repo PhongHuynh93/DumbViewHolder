@@ -16,7 +16,7 @@ public abstract class BaseAdapter extends RecyclerView.Adapter {
     private LayoutInflater inflater;
     private SmartViewHolder.ExcellentAdventureListener adventureListener;
 
-
+    // info - Then our Adapter just needs an updated Constructor so it can pass the listener through.
     public BaseAdapter(LayoutInflater inflater, SmartViewHolder.ExcellentAdventureListener adventureListener) {
         this.inflater = inflater;
         this.adventureListener = adventureListener;
